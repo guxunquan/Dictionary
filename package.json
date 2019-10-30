@@ -1,0 +1,46 @@
+{
+  "name": "Dictionary-api",
+  "version": "0.1.0",
+  "description": "fiton-api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "nodemon --exec babel-node src",
+    "prd": "pm2 start bin/www",
+    "build": "npx babel src --out-dir dist --copy-files --source-maps"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "bluebird": "^3.5.1",
+    "debug": "^4.1.1",
+    "file-stream-rotator": "^0.2.1",
+    "jpush-async": "^4.0.2",
+    "js-yaml": "^3.12.0",
+    "jsonwebtoken": "^8.3.0",
+    "kcors": "^2.2.2",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-joi-router": "^5.1.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-morgan": "^1.0.1",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "log4js": "^2.10.0",
+    "pug": "^2.0.3",
+    "bull": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.19.1"
+  }
+}

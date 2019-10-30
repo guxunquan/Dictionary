@@ -1,0 +1,24 @@
+log:
+  staging: &log_staging
+    path: ~
+  production: *log_staging
+  test: &log_test
+    path: ~
+  development: *log_test
+
+Jpush:
+  development:
+    appkey: 0e73adef8b19dca4bc5d4919
+    mastersecret: e651e6cc9d881825df7dad1d
+  staging:
+    appkey: 0e73adef8b19dca4bc5d4919
+    mastersecret: e651e6cc9d881825df7dad1d
+
+cache:
+  development:
+    host: 127.0.0.1
+    port: 6379
+  staging:
+    host: 127.0.0.1
+    port: 6379
+ 
